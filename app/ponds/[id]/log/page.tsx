@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { useRouter, useParams, useSearchParams } from 'next/navigation'
-import { createClient } from '@/lib/supabase'
+import { createClient } from '../lib/supabase'
 import { calcBiomass, calcSurvivalRate } from '@/lib/calculations'
 import { PondLog } from '@/lib/types'
 import { ArrowLeft, AlertTriangle, Wifi, CheckCircle } from 'lucide-react'
