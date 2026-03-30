@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { createClient } from '@/lib/supabase'
+import { createClient } from '../lib/supabase'
 import { CropCycle } from '@/lib/types'
 import { format, parseISO } from 'date-fns'
 import { ChevronRight, FileText } from 'lucide-react'
