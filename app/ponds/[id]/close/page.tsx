@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { useRouter, useParams } from 'next/navigation'
-import { createClient } from '@/lib/supabase'
+import { createClient } from '../lib/supabase'
 import { CropCycle, PondLog } from '@/lib/types'
 import { format } from 'date-fns'
 import { ArrowLeft, FileText, CheckCircle, AlertTriangle } from 'lucide-react'
