@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { createClient } from '@/lib/supabase'
-import { Pond, CropCycle, PondLog } from '@/lib/types'
+import { createClient } from '../../lib/supabase'
+import { Pond, CropCycle, PondLog } from '../../lib/types'
 import { Plus, Droplets, Fish, AlertCircle, CheckCircle2, Clock } from 'lucide-react'
 import { formatDistanceToNow } from 'date-fns'
 
