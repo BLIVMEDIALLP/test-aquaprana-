@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { createClient } from '@/lib/supabase'
+import { createClient } from '../lib/supabase'
 import { calcHarvestWindow } from '@/lib/calculations'
 import { SPECIES_LIST, SPECIES_CATEGORIES } from '@/lib/types'
 import { ArrowLeft, MapPin, ChevronDown } from 'lucide-react'
