@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { useRouter, useParams } from 'next/navigation'
 import { createClient } from '@/lib/supabase'
-import { CropCycle, PondLog, Pond } from '@/lib/types'
+import { CropCycle, PondLog, Pond } from '../lib/types'
 import { format, parseISO, differenceInDays } from 'date-fns'
 import { ArrowLeft, Share2, Download } from 'lucide-react'
 
