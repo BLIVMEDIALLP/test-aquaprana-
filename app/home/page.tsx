@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { createClient } from '../../lib/supabase'
+import { supabase } from '../../lib/supabase'
 import { Pond, CropCycle, PondLog } from '../../lib/types'
 import { Plus, Droplets, Fish, AlertCircle, CheckCircle2, Clock } from 'lucide-react'
 import { formatDistanceToNow } from 'date-fns'
@@ -24,7 +24,7 @@ export default function HomePage() {
   }, [])
 
   const loadData = async () => {
-    const supabase = createClient()
+    
 
     // Demo mode
     if (sessionStorage.getItem('ap_demo')) {
