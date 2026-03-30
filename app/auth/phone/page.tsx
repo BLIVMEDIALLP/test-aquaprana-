@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { createClient } from '@/lib/supabase'
+import { createClient } from '../lib/supabase'
 import { Phone, ChevronRight } from 'lucide-react'
 
 export default function PhonePage() {
