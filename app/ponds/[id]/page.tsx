@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useCallback } from 'react'
 import { useRouter, useParams } from 'next/navigation'
-import { createClient } from '@/lib/supabase'
+import { createClient } from '../lib/supabase'
 import {
   getCycleDay, getHarvestDisplay, getWQStatus, calcSurvivalRate,
   calcBiomass, calcFCR, formatNumber, WQStatus
