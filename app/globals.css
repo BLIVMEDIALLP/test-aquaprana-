@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-ap-gray text-ap-text font-sans;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  .mobile-container {
+    @apply max-w-md mx-auto min-h-screen bg-white relative;
+  }
+  .screen-content {
+    @apply flex flex-col h-full overflow-y-auto;
+  }
+  .ap-btn-primary {
+    @apply bg-ap-blue text-white rounded-xl py-4 px-6 text-base font-semibold
+           active:bg-ap-blue-dark transition-colors w-full;
+  }
+  .ap-btn-secondary {
+    @apply bg-ap-blue-light text-ap-blue rounded-xl py-4 px-6 text-base font-semibold
+           active:opacity-80 transition-opacity w-full;
+  }
+  .ap-btn-ghost {
+    @apply text-ap-blue py-4 px-6 text-base font-semibold
+           active:opacity-60 transition-opacity;
+  }
+  .ap-input {
+    @apply bg-ap-gray border border-ap-border rounded-xl px-4 py-3.5
+           text-base text-ap-text placeholder-ap-muted
+           focus:outline-none focus:ring-2 focus:ring-ap-blue focus:border-transparent
+           w-full;
+  }
+  .ap-label {
+    @apply text-sm font-medium text-ap-muted mb-1 block;
+  }
+  .ap-card {
+    @apply bg-white rounded-2xl border border-ap-border shadow-card p-4;
+  }
+  .ap-section-title {
+    @apply text-xs font-semibold text-ap-muted uppercase tracking-wider mb-3;
+  }
+  .pill-green {
+    @apply bg-ap-green-light text-ap-green text-xs font-semibold px-2.5 py-0.5 rounded-full;
+  }
+  .pill-blue {
+    @apply bg-ap-blue-light text-ap-blue text-xs font-semibold px-2.5 py-0.5 rounded-full;
+  }
+  .pill-amber {
+    @apply bg-ap-amber-light text-ap-amber text-xs font-semibold px-2.5 py-0.5 rounded-full;
+  }
+  .pill-red {
+    @apply bg-ap-red-light text-ap-red text-xs font-semibold px-2.5 py-0.5 rounded-full;
+  }
+  .pill-gray {
+    @apply bg-ap-gray text-ap-muted text-xs font-semibold px-2.5 py-0.5 rounded-full;
+  }
+  .wq-tile-green {
+    @apply bg-ap-green-light rounded-xl p-3;
+  }
+  .wq-tile-blue {
+    @apply bg-ap-blue-light rounded-xl p-3;
+  }
+  .wq-tile-red {
+    @apply bg-ap-red-light rounded-xl p-3;
+  }
+  .wq-tile-gray {
+    @apply bg-ap-gray rounded-xl p-3;
+  }
+}
